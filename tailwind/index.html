@@ -1,902 +1,651 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PineTour</title>
 
-  <title>PineTour</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Bebas Neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Bebas Neue -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Lucide -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .bebas {
+        font-family: "Bebas Neue", sans-serif;
+      }
 
-  <style>
-    .bebas {
-      font-family: "Bebas Neue", sans-serif;
-    }
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="mx-auto w-[1440px] inter">
+    <!-- HERO SECTION -->
 
-    .inter {
-      font-family: "Inter", sans-serif;
-    }
-  </style>
-</head>
-<body class="mx-auto w-[1440px] inter">
+    <section
+      class="relative w-full h-[773px] bg-[url('image/HeroImage.png')] bg-cover bg-center"
+    >
+      <!-- NAVBAR -->
+      <nav
+        class="w-[1200px] mx-auto pt-[30px] flex items-center justify-between text-white relative z-10"
+      >
+        <!-- LOGO -->
+        <img
+          class="w-[101px] h-auto"
+          src="image/pinetour logo.png"
+          alt="Logo"
+        />
 
-  <!-- HERO SECTION -->
+        <!-- MENU -->
+        <div class="flex items-center gap-[70px] text-[18px] font-semibold">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
 
-  <section class="relative w-full h-[773px]
-         bg-[url('image/HeroImage.png')]
-         bg-cover bg-center">
+          <i data-lucide="user-round" class="w-[20px]"></i>
+        </div>
 
-    <!-- NAVBAR -->
-    <nav class="w-[1200px]
-           mx-auto
-           pt-[30px]
-           flex items-center justify-between
-           text-white
-           relative z-10">
+        <!-- LANGUAGE -->
+        <button
+          class="w-[40px] h-[40px] bg-white text-black rounded-full font-semibold"
+        >
+          EN
+        </button>
+      </nav>
 
-      <!-- LOGO -->
-      <img class="w-[101px] h-auto" src="image/pinetour logo.png" alt="Logo">
+      <!-- HERO TEXT -->
+      <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <h1 class="bebas text-[64px] uppercase text-[#E8EDF2]/70 leading-none">
+          Pure Magic
+        </h1>
 
+        <h2 class="bebas text-[250px] uppercase text-white leading-[0.95]">
+          Awaits!
+        </h2>
 
-      <!-- MENU -->
-      <div class="flex items-center
-             gap-[70px]
-             text-[18px]
-             font-semibold">
-
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-
-        <i data-lucide="user-round" class="w-[20px]"></i>
-
+        <h3 class="bebas text-[64px] text-white mt-[20px] leading-none">
+          2024
+        </h3>
       </div>
+    </section>
 
+    <section
+      class="relative w-full h-[512px] bg-[url(/image/location.png)] bg-cover bg-center flex items-center justify-center"
+    >
+      <div class="flex gap-[40px]">
+        <!-- CARD 1 -->
+        <div
+          class="relative w-[275.5px] h-[370px] rounded-[40px] overflow-hidden shadow-[8px_8px_0px_0_#29728B40,-8px_-8px_0px_0_#1F72AA75] hover:bg-radial-100 transition"
+        >
+          <img
+            src="image/terhiin tsagaan.png"
+            alt="Terkhiin Tsagaan Lake"
+            class="w-full h-full object-cover"
+          />
 
-      <!-- LANGUAGE -->
-      <button class="w-[40px] h-[40px]
-             bg-white text-black
-             rounded-full
-             font-semibold">
-        EN
-      </button>
+          <div
+            class="absolute inset-0 flex items-center justify-center text-center"
+          >
+            <h2
+              class="bebas text-[37px] leading-[1.2] text-[#FDFDFE]/80 uppercase"
+            >
+              Terkhiin Tsagaan <br />
+              Lake
+            </h2>
+          </div>
+        </div>
 
-    </nav>
+        <!-- CARD 2 -->
+        <div
+          class="relative w-[275.5px] h-[370px] rounded-[40px] overflow-hidden shadow-[8px_8px_0px_0_#29728B40,-8px_-8px_0px_0_#1F72AA75]"
+        >
+          <img
+            src="image/amarbaysglan.png"
+            alt="Amarbayasgalant Monastery"
+            class="w-full h-full object-cover"
+          />
 
+          <div
+            class="absolute inset-0 flex items-center justify-center text-center"
+          >
+            <h2
+              class="bebas text-[37px] leading-[1.2] text-[#FDFDFE]/80 uppercase"
+            >
+              Amarbayasgalant <br />
+              Monastery
+            </h2>
+          </div>
+        </div>
 
-    <!-- HERO TEXT -->
-    <div class="absolute inset-0
-           flex flex-col
-           items-center justify-center">
+        <!-- CARD 3 -->
+        <div
+          class="relative w-[275.5px] h-[370px] rounded-[40px] overflow-hidden shadow-[8px_8px_0px_0_#29728B40,-8px_-8px_0px_0_#1F72AA75]"
+        >
+          <img
+            src="image/huwsgul.png"
+            alt="Khuvsgul Lake"
+            class="w-full h-full object-cover"
+          />
 
-      <h1 class="bebas
-             text-[64px]
-             uppercase
-             text-[#E8EDF2]/70
-             leading-none">
-        Pure Magic
+          <div
+            class="absolute inset-0 flex items-center justify-center text-center"
+          >
+            <h2
+              class="bebas text-[37px] leading-[1.2] text-[#FDFDFE]/80 uppercase"
+            >
+              Khuvsgul Lake
+            </h2>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div
+          class="relative w-[275.5px] h-[370px] rounded-[40px] overflow-hidden shadow-[8px_8px_0px_0_#29728B40,-8px_-8px_0px_0_#1F72AA75]"
+        >
+          <img
+            src="image/horgiin togoo (2).png"
+            alt="Khorgiin Togoo"
+            class="w-full h-full object-cover"
+          />
+
+          <div
+            class="absolute inset-0 flex items-center justify-center text-center"
+          >
+            <h2
+              class="bebas text-[37px] leading-[1.2] text-[#FDFDFE]/80 uppercase"
+            >
+              Khorgiin Togoo
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP SECTION -->
+
+    <section
+      class="w-full h-[1022px] bg-[url('image/roadmap.png')] bg-cover bg-center pl-[120px] relative flex flex-col justify-start"
+    >
+      <!-- TITLE -->
+      <h1
+        class="text-[51px] text-center text-black leading-none mt-[20px] font-medium"
+      >
+        Destination of Our Agency
       </h1>
 
-      <h2 class="bebas
-             text-[250px]
-             uppercase
-             text-white
-             leading-[0.95]">
-        Awaits!
+      <h2 class="text-[24px] text-center text-[#18181B]/70 mt-[5px]">
+        Pack your bags and get ready
       </h2>
 
-      <h3 class="bebas
-             text-[64px]
-             text-white
-             mt-[20px]
-             leading-none">
-        2024
-      </h3>
-
-    </div>
-
-  </section>
-
-  <section class="relative
-         w-full h-[512px]
-         bg-[url(/image/location img.png)]
-         bg-cover bg-center
-         flex items-center justify-center">
-
-    <div class="flex gap-[40px]">
-
-      <!-- CARD 1 -->
-      <div class="relative
-             w-[275.5px] h-[370px]
-             rounded-[40px]
-             overflow-hidden
-             shadow-[8px_8px_0px_0_#29728B40,-8px_-8px_0px_0_#1F72AA75]
-             hover:cursor-pointer
-             opacity-80
-             transition">
-
-        <img src="image/terhiin tsagaan.png" alt="Terkhiin Tsagaan Lake" class="w-full h-full object-cover">
-
-        <div class="absolute inset-0
-               flex items-center justify-center
-               text-center">
-
-          <h2 class="bebas
-                 text-[37px]
-                 leading-[1.2]
-                 text-[#FDFDFE]/80
-                 uppercase">
-            Terkhiin Tsagaan <br>
-            Lake
-          </h2>
-
-        </div>
-
-      </div>
-
-      <!-- CARD 2 -->
-      <div class="relative
-             w-[275.5px] h-[370px]
-             rounded-[40px]
-             overflow-hidden
-             shadow-[8px_8px_0px_0_#29728B40,-8px_-8px_0px_0_#1F72AA75]">
-
-        <img src="image/amarbaysglan.png" alt="Amarbayasgalant Monastery" class="w-full h-full object-cover">
-
-        <div class="absolute inset-0
-               flex items-center justify-center
-               text-center">
-
-          <h2 class="bebas
-                 text-[37px]
-                 leading-[1.2]
-                 text-[#FDFDFE]/80
-                 uppercase">
-            Amarbayasgalant <br>
-            Monastery
-          </h2>
-
-        </div>
-
-      </div>
-
-      <!-- CARD 3 -->
-      <div class="relative
-             w-[275.5px] h-[370px]
-             rounded-[40px]
-             overflow-hidden
-             shadow-[8px_8px_0px_0_#29728B40,-8px_-8px_0px_0_#1F72AA75]">
-
-        <img src="image/huwsgul.png" alt="Khuvsgul Lake" class="w-full h-full object-cover">
-
-        <div class="absolute inset-0
-               flex items-center justify-center
-               text-center">
-
-          <h2 class="bebas
-                 text-[37px]
-                 leading-[1.2]
-                 text-[#FDFDFE]/80
-                 uppercase">
-            Khuvsgul Lake
-          </h2>
-
-        </div>
-
-      </div>
-
-      <!-- CARD 4 -->
-      <div class="relative
-             w-[275.5px] h-[370px]
-             rounded-[40px]
-             overflow-hidden
-             shadow-[8px_8px_0px_0_#29728B40,-8px_-8px_0px_0_#1F72AA75]">
-
-        <img src="image/horgiin togoo (2).png" alt="Khorgiin Togoo" class="w-full h-full object-cover">
-
-        <div class="absolute inset-0
-               flex items-center justify-center
-               text-center">
-
-          <h2 class="bebas
-                 text-[37px]
-                 leading-[1.2]
-                 text-[#FDFDFE]/80
-                 uppercase">
-            Khorgiin Togoo
-          </h2>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ROADMAP SECTION -->
-
-  <section class="w-full h-[1022px]
-         bg-[url('image/roadmap.png')]
-         bg-cover bg-center
-         pl-[120px]
-         relative
-         flex flex-col justify-start">
-
-    <!-- TITLE -->
-    <h1 class="text-[51px]
-           text-center
-           text-black
-           leading-none
-           mt-[20px]
-           font-medium">
-      Destination of Our Agency
-    </h1>
-
-    <h2 class="text-[24px]
-           text-center
-           text-[#18181B]/70
-           mt-[5px]">
-      Pack your bags and get ready
-    </h2>
-
-
-    <!-- DAY 1 -->
-    <div class="relative
-           w-[512px] h-[112px]
-           mt-[90px]
-           rounded-[120px]
-           bg-[#EEE9D9]/80
-           px-[40px]
-           flex items-center justify-between
-           cursor-pointer
-           group">
-
-      <img src="image/suhbaatrin talbai.png" alt="" class="hidden
-             group-hover:block
-             absolute
-             left-[600px]
-             top-1/2
-             -translate-y-1/2
-             w-[245px] h-[245px]
-             rounded-full
-             object-cover">
-
-      <div class="flex flex-col">
-
-        <h1 class="text-[24px] font-medium text-black">
-          Sukhbaatar square
-        </h1>
-
-        <div class="flex items-center gap-[14px] mt-[4px]">
-
-          <img class="w-[14px] h-[14px]" src="image/har mappin.png" alt="Icon">
-
-          <p class="text-[12px] text-[#18181B]/70">
-            Ulaanbaatar
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="w-[52px] h-[52px]
-             rounded-full
-             bg-white
-             flex items-center justify-center">
-        <span class="text-[14px] text-black">
-          DAY 1
-        </span>
-      </div>
-
-    </div>
-
-
-    <!-- DAY 2 -->
-    <div class="relative
-           w-[512px] h-[112px]
-           mt-[20px]
-           rounded-[120px]
-           bg-[#8BB8C1CC]/80
-           px-[40px]
-           flex items-center justify-between
-           cursor-pointer
-           group">
-
-      <img src="hover/3.png" alt="" class="hidden
-             group-hover:block
-             absolute
-             left-[600px]
-             top-1/2
-             -translate-y-1/2
-             w-[245px] h-[245px]
-             rounded-full
-             object-cover">
-
-      <div class="flex flex-col">
-
-        <h1 class="text-[24px] font-medium text-black">
-          Amarbayasgalant Monastery
-        </h1>
-
-        <div class="flex items-center gap-[14px] mt-[4px]">
-
-          <img class="w-[14px] h-[14px]" src="image/har mappin.png" alt="Icon">
-
-          <p class="text-[12px] text-[#18181B]/70">
-            Bulgan
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="w-[52px] h-[52px]
-             rounded-full
-             bg-white
-             flex items-center justify-center">
-        <span class="text-[14px] text-black">
-          DAY 2
-        </span>
-      </div>
-
-    </div>
-
-
-    <!-- DAY 3 -->
-    <div class="relative
-           w-[512px] h-[112px]
-           mt-[20px]
-           rounded-[120px]
-           bg-[#8BB8C1CC]/80
-           px-[40px]
-           flex items-center justify-between
-           cursor-pointer
-           group">
-
-      <img src="hover/suhbaatrin talbai.png" alt="" class="hidden
-             group-hover:block
-             absolute
-             left-[600px]
-             top-1/2
-             -translate-y-1/2
-             w-[245px] h-[245px]
-             rounded-full
-             object-cover">
-
-      <div class="flex flex-col">
-
-        <h1 class="text-[24px] font-medium text-black">
-          Khorgiin Togoo
-        </h1>
-
-        <div class="flex items-center gap-[14px] mt-[4px]">
-
-          <img class="w-[14px] h-[14px]" src="image/har mappin.png" alt="Icon">
-
-          <p class="text-[12px] text-[#18181B]/70">
-            Arkhangai
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="w-[52px] h-[52px]
-             rounded-full
-             bg-white
-             flex items-center justify-center">
-        <span class="text-[14px] text-black">
-          DAY 3
-        </span>
-      </div>
-
-    </div>
-
-
-    <!-- DAY 4 -->
-    <div class="relative
-           w-[512px] h-[112px]
-           mt-[20px]
-           rounded-[120px]
-           bg-[#8BB8C1CC]/80
-           px-[40px]
-           flex items-center justify-between
-           cursor-pointer
-           group">
-
-      <img src="hover/4.png" alt="" class="hidden
-             group-hover:block
-             absolute
-             left-[600px]
-             top-1/2
-             -translate-y-1/2
-             w-[245px] h-[245px]
-             rounded-full
-             object-cover">
-
-      <div class="flex flex-col">
-
-        <h1 class="text-[24px] font-medium text-black">
-          Terkhiin Tsagaan Lake
-        </h1>
-
-        <div class="flex items-center gap-[14px] mt-[4px]">
-
-          <img class="w-[14px] h-[14px]" src="image/har mappin.png" alt="Icon">
-
-          <p class="text-[12px] text-[#18181B]/70">
-            Arkhangai
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="w-[52px] h-[52px]
-             rounded-full
-             bg-white
-             flex items-center justify-center">
-        <span class="text-[14px] text-black">
-          DAY 4
-        </span>
-      </div>
-
-    </div>
-
-
-    <!-- DAY 5 -->
-    <div class="relative
-           w-[512px] h-[112px]
-           mt-[20px]
-           rounded-[120px]
-           bg-[#8BB8C1CC]/80
-           px-[40px]
-           flex items-center justify-between
-           cursor-pointer
-           group">
-
-      <img src="hover/5.png" alt="" class="hidden
-             group-hover:block
-             absolute
-             left-[600px]
-             top-1/2
-             -translate-y-1/2
-             w-[245px] h-[245px]
-             rounded-full
-             object-cover">
-
-      <div class="flex flex-col">
-
-        <h1 class="text-[24px] font-medium text-black">
-          Khuvsgul Lake
-        </h1>
-
-        <div class="flex items-center gap-[14px] mt-[4px]">
-
-          <img class="w-[14px] h-[14px]" src="image/har mappin.png" alt="Icon">
-
-          <p class="text-[12px] text-[#18181B]/70">
-            Khuvsgul
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="w-[52px] h-[52px]
-             rounded-full
-             bg-white
-             flex items-center justify-center">
-        <span class="text-[14px] text-black">
-          DAY 5
-        </span>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- PRICING SECTION -->
-
-  <section class="w-full min-h-[1122px]
-         bg-[url(image/footer.png)]
-         bg-cover bg-center
-         relative
-         flex flex-col items-center">
-
-    <!-- TITLE -->
-    <h1 class="text-[51px]
-           text-black
-           leading-none
-           text-center
-           mt-[20px]
-           font-medium">
-      Pricing of Our Agency
-    </h1>
-
-    <h2 class="text-[24px]
-           text-[#18181B]
-           mt-[10px]
-           text-center">
-      Choose a package that’s right for you
-    </h2>
-
-    <!-- ALL 3 CARDS -->
-
-    <div class="flex gap-[40px] mt-[80px]">
-
-      <!-- BUDGET PACKAGE -->
-
-      <div class="w-[384px] h-[527px]
-             rounded-[40px]
-             bg-[#FAFBFC]
-             px-[24px] py-[30px]
-             flex flex-col">
-
-        <!-- TITLE -->
-        <div class="flex items-center gap-[16px]">
-
-          <div class="w-[36px] h-[36px]
-                 rounded-full
-                 border border-[#D9D9D9]
-                 flex items-center justify-center">
-            <span class="text-[18px]">♥</span>
+      <!-- DAY 1 -->
+      <div
+        class="relative w-[512px] h-[112px] mt-[90px] rounded-[120px] bg-[#EEE9D9]/80 px-[40px] flex items-center justify-between cursor-pointer group"
+      >
+        <img
+          src="image/suhbaatrin talbai.png"
+          alt=""
+          class="hidden group-hover:block absolute left-[600px] top-1/2 -translate-y-1/2 w-[245px] h-[245px] rounded-full object-cover"
+        />
+
+        <div class="flex flex-col">
+          <h1 class="text-[24px] font-medium text-black">Sukhbaatar square</h1>
+
+          <div class="flex items-center gap-[14px] mt-[4px]">
+            <img
+              class="w-[14px] h-[14px]"
+              src="image/har mappin.png"
+              alt="Icon"
+            />
+
+            <p class="text-[12px] text-[#18181B]/70">Ulaanbaatar</p>
           </div>
-
-          <h2 class="text-[20px] font-medium text-[#18181B]">
-            Budget Package
-          </h2>
-
         </div>
 
-        <!-- PRICE -->
+        <div
+          class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center"
+        >
+          <span class="text-[14px] text-black"> DAY 1 </span>
+        </div>
+      </div>
 
-        <div class="mt-[38px]">
+      <!-- DAY 2 -->
+      <div
+        class="relative w-[512px] h-[112px] mt-[20px] rounded-[120px] bg-[#8BB8C1CC]/80 px-[40px] flex items-center justify-between cursor-pointer group"
+      >
+        <img
+          src="hover/3.png"
+          alt=""
+          class="hidden group-hover:block absolute left-[600px] top-1/2 -translate-y-1/2 w-[245px] h-[245px] rounded-full object-cover"
+        />
 
-          <h1 class="text-[40px] font-semibold text-[#303030]">
-            500$
+        <div class="flex flex-col">
+          <h1 class="text-[24px] font-medium text-black">
+            Amarbayasgalant Monastery
           </h1>
 
-          <p class="text-[16px] text-[#999999] mt-[5px]">
-            Essentials Covered
-          </p>
+          <div class="flex items-center gap-[14px] mt-[4px]">
+            <img
+              class="w-[14px] h-[14px]"
+              src="image/har mappin.png"
+              alt="Icon"
+            />
 
+            <p class="text-[12px] text-[#18181B]/70">Bulgan</p>
+          </div>
         </div>
 
-        <!-- INCLUDES -->
-
-        <div class="mt-[30px]">
-
-          <h3 class="text-[18px] font-medium ml-[40px] mb-[18px]">
-            Includes:
-          </h3>
-
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              Group transportation (shared van/bus)
-            </p>
-          </div>
-
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047] leading-[18px]">
-              Standard accommodation (yurt or guesthouse)
-            </p>
-          </div>
-
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              Guided lake tour
-            </p>
-          </div>
-
-          <div class="flex items-start gap-[22px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              1 meal per day (breakfast)
-            </p>
-          </div>
-
+        <div
+          class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center"
+        >
+          <span class="text-[14px] text-black"> DAY 2 </span>
         </div>
-
-        <!-- BUTTON -->
-
-        <button class="mt-auto
-               w-full h-[48px]
-               rounded-full
-               bg-[#A4D5E7]
-               text-[16px]
-               font-semibold
-               text-black
-               hover:bg-[#8BC8DF]
-               transition">
-          Select package
-        </button>
-
       </div>
 
-      <!-- STANDARD PACKAGE -->
+      <!-- DAY 3 -->
+      <div
+        class="relative w-[512px] h-[112px] mt-[20px] rounded-[120px] bg-[#8BB8C1CC]/80 px-[40px] flex items-center justify-between cursor-pointer group"
+      >
+        <img
+          src="hover/suhbaatrin talbai.png"
+          alt=""
+          class="hidden group-hover:block absolute left-[600px] top-1/2 -translate-y-1/2 w-[245px] h-[245px] rounded-full object-cover"
+        />
 
-      <div class="w-[384px] h-[527px]
-             rounded-[40px]
-             bg-[#FAFBFC]
-             px-[24px] py-[30px]
-             flex flex-col">
+        <div class="flex flex-col">
+          <h1 class="text-[24px] font-medium text-black">Khorgiin Togoo</h1>
 
-        <!-- TITLE -->
-        <div class="flex items-center gap-[16px]">
+          <div class="flex items-center gap-[14px] mt-[4px]">
+            <img
+              class="w-[14px] h-[14px]"
+              src="image/har mappin.png"
+              alt="Icon"
+            />
 
-          <div class="w-[36px] h-[36px]
-                 rounded-full
-                 border border-[#D9D9D9]
-                 flex items-center justify-center">
-            <span class="text-[18px]">♥</span>
+            <p class="text-[12px] text-[#18181B]/70">Arkhangai</p>
           </div>
-
-          <h2 class="text-[20px] font-medium text-[#18181B]">
-            Standard Package
-          </h2>
-
         </div>
 
-        <!-- PRICE -->
+        <div
+          class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center"
+        >
+          <span class="text-[14px] text-black"> DAY 3 </span>
+        </div>
+      </div>
 
-        <div class="mt-[38px]">
+      <!-- DAY 4 -->
+      <div
+        class="relative w-[512px] h-[112px] mt-[20px] rounded-[120px] bg-[#8BB8C1CC]/80 px-[40px] flex items-center justify-between cursor-pointer group"
+      >
+        <img
+          src="hover/4.png"
+          alt=""
+          class="hidden group-hover:block absolute left-[600px] top-1/2 -translate-y-1/2 w-[245px] h-[245px] rounded-full object-cover"
+        />
 
-          <h1 class="text-[40px] font-semibold text-[#303030]">
-            800$
+        <div class="flex flex-col">
+          <h1 class="text-[24px] font-medium text-black">
+            Terkhiin Tsagaan Lake
           </h1>
 
-          <div class="flex items-center justify-between mt-[5px]">
+          <div class="flex items-center gap-[14px] mt-[4px]">
+            <img
+              class="w-[14px] h-[14px]"
+              src="image/har mappin.png"
+              alt="Icon"
+            />
 
-            <p class="text-[16px] text-[#999999]">
-              Balanced Adventure
-            </p>
+            <p class="text-[12px] text-[#18181B]/70">Arkhangai</p>
+          </div>
+        </div>
 
-            <div class="w-[91px] h-[27px]
-                   rounded-full
-                   bg-[#6972B5]
-                   text-white
-                   flex items-center justify-center
-                   text-[14px]">
-              Popular
+        <div
+          class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center"
+        >
+          <span class="text-[14px] text-black"> DAY 4 </span>
+        </div>
+      </div>
+
+      <!-- DAY 5 -->
+      <div
+        class="relative w-[512px] h-[112px] mt-[20px] rounded-[120px] bg-[#8BB8C1CC]/80 px-[40px] flex items-center justify-between cursor-pointer group"
+      >
+        <img
+          src="hover/5.png"
+          alt=""
+          class="hidden group-hover:block absolute left-[600px] top-1/2 -translate-y-1/2 w-[245px] h-[245px] rounded-full object-cover"
+        />
+
+        <div class="flex flex-col">
+          <h1 class="text-[24px] font-medium text-black">Khuvsgul Lake</h1>
+
+          <div class="flex items-center gap-[14px] mt-[4px]">
+            <img
+              class="w-[14px] h-[14px]"
+              src="image/har mappin.png"
+              alt="Icon"
+            />
+
+            <p class="text-[12px] text-[#18181B]/70">Khuvsgul</p>
+          </div>
+        </div>
+
+        <div
+          class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center"
+        >
+          <span class="text-[14px] text-black"> DAY 5 </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+
+    <section
+      class="w-full min-h-[1122px] bg-[url(image/footer.png)] bg-cover bg-center relative flex flex-col items-center"
+    >
+      <!-- TITLE -->
+      <h1
+        class="text-[51px] text-black leading-none text-center mt-[20px] font-medium"
+      >
+        Pricing of Our Agency
+      </h1>
+
+      <h2 class="text-[24px] text-[#18181B] mt-[10px] text-center">
+        Choose a package that’s right for you
+      </h2>
+
+      <!-- ALL 3 CARDS -->
+
+      <div class="flex gap-[40px] mt-[80px]">
+        <!-- BUDGET PACKAGE -->
+
+        <div
+          class="w-[384px] h-[527px] rounded-[40px] bg-[#FAFBFC] px-[24px] py-[30px] flex flex-col"
+        >
+          <!-- TITLE -->
+          <div class="flex items-center gap-[16px]">
+            <div
+              class="w-[36px] h-[36px] rounded-full border border-[#D9D9D9] flex items-center justify-center"
+            >
+              <span class="text-[18px]">♥</span>
             </div>
 
+            <h2 class="text-[20px] font-medium text-[#18181B]">
+              Budget Package
+            </h2>
           </div>
 
+          <!-- PRICE -->
+
+          <div class="mt-[38px]">
+            <h1 class="text-[40px] font-semibold text-[#303030]">500$</h1>
+
+            <p class="text-[16px] text-[#999999] mt-[5px]">
+              Essentials Covered
+            </p>
+          </div>
+
+          <!-- INCLUDES -->
+
+          <div class="mt-[30px]">
+            <h3 class="text-[18px] font-medium ml-[40px] mb-[18px]">
+              Includes:
+            </h3>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">
+                Group transportation (shared van/bus)
+              </p>
+            </div>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047] leading-[18px]">
+                Standard accommodation (yurt or guesthouse)
+              </p>
+            </div>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">Guided lake tour</p>
+            </div>
+
+            <div class="flex items-start gap-[22px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">
+                1 meal per day (breakfast)
+              </p>
+            </div>
+          </div>
+
+          <!-- BUTTON -->
+
+          <button
+            class="mt-auto w-full h-[48px] rounded-full bg-[#A4D5E7] text-[16px] font-semibold text-black hover:bg-[#8BC8DF] transition"
+          >
+            Select package
+          </button>
         </div>
 
-        <!-- INCLUDES -->
+        <!-- STANDARD PACKAGE -->
 
-        <div class="mt-[30px]">
+        <div
+          class="w-[384px] h-[527px] rounded-[40px] bg-[#FAFBFC] px-[24px] py-[30px] flex flex-col"
+        >
+          <!-- TITLE -->
+          <div class="flex items-center gap-[16px]">
+            <div
+              class="w-[36px] h-[36px] rounded-full border border-[#D9D9D9] flex items-center justify-center"
+            >
+              <span class="text-[18px]">♥</span>
+            </div>
 
-          <h3 class="text-[18px] font-medium ml-[40px] mb-[18px]">
-            Includes:
-          </h3>
-
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              Comfortable transportation (mini-bus)
-            </p>
+            <h2 class="text-[20px] font-medium text-[#18181B]">
+              Standard Package
+            </h2>
           </div>
 
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047] leading-[18px]">
-              Mid-range accommodation (private yurt or lodge)
-            </p>
+          <!-- PRICE -->
+
+          <div class="mt-[38px]">
+            <h1 class="text-[40px] font-semibold text-[#303030]">800$</h1>
+
+            <div class="flex items-center justify-between mt-[5px]">
+              <p class="text-[16px] text-[#999999]">Balanced Adventure</p>
+
+              <div
+                class="w-[91px] h-[27px] rounded-full bg-[#6972B5] text-white flex items-center justify-center text-[14px]"
+              >
+                Popular
+              </div>
+            </div>
           </div>
 
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              Guided lake tour + nearby hiking
-            </p>
+          <!-- INCLUDES -->
+
+          <div class="mt-[30px]">
+            <h3 class="text-[18px] font-medium ml-[40px] mb-[18px]">
+              Includes:
+            </h3>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">
+                Comfortable transportation (mini-bus)
+              </p>
+            </div>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047] leading-[18px]">
+                Mid-range accommodation (private yurt or lodge)
+              </p>
+            </div>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">
+                Guided lake tour + nearby hiking
+              </p>
+            </div>
+
+            <div class="flex items-start gap-[22px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">
+                2 meals per day (breakfast and dinner)
+              </p>
+            </div>
           </div>
 
-          <div class="flex items-start gap-[22px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              2 meals per day (breakfast and dinner)
-            </p>
-          </div>
+          <!-- BUTTON -->
 
+          <button
+            class="mt-auto w-full h-[48px] rounded-full bg-[#A4D5E7] text-[16px] font-semibold text-black hover:bg-[#8BC8DF] transition"
+          >
+            Select package
+          </button>
         </div>
 
-        <!-- BUTTON -->
+        <!-- LUXURY PACKAGE -->
 
-        <button class="mt-auto
-               w-full h-[48px]
-               rounded-full
-               bg-[#A4D5E7]
-               text-[16px]
-               font-semibold
-               text-black
-               hover:bg-[#8BC8DF]
-               transition">
-          Select package
-        </button>
+        <div
+          class="w-[384px] h-[527px] rounded-[40px] bg-[#FAFBFC] px-[24px] py-[30px] flex flex-col"
+        >
+          <!-- TITLE -->
+          <div class="flex items-center gap-[16px]">
+            <div
+              class="w-[36px] h-[36px] rounded-full border border-[#D9D9D9] flex items-center justify-center"
+            >
+              <span class="text-[18px]">♥</span>
+            </div>
 
+            <h2 class="text-[20px] font-medium text-[#18181B]">
+              Luxury Package
+            </h2>
+          </div>
+
+          <!-- PRICE -->
+
+          <div class="mt-[38px]">
+            <h1 class="text-[40px] font-semibold text-[#303030]">1200$</h1>
+
+            <p class="text-[16px] text-[#999999] mt-[5px]">Ultimate Comfort</p>
+          </div>
+
+          <!-- INCLUDES -->
+
+          <div class="mt-[30px]">
+            <h3 class="text-[18px] font-medium ml-[40px] mb-[18px]">
+              Includes:
+            </h3>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">
+                Private transportation (SUV)
+              </p>
+            </div>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047] leading-[18px]">
+                Luxury accommodation (lakefront lodge)
+              </p>
+            </div>
+
+            <div class="flex items-start gap-[22px] mb-[18px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">
+                Guided tours (lake + reindeer herder experience)
+              </p>
+            </div>
+
+            <div class="flex items-start gap-[22px]">
+              <span class="text-[22px] leading-none">✓</span>
+              <p class="text-[14px] text-[#404047]">
+                All meals included (local cuisine)
+              </p>
+            </div>
+          </div>
+
+          <!-- BUTTON -->
+
+          <button
+            class="mt-auto w-full h-[48px] rounded-full bg-[#A4D5E7] text-[16px] font-semibold text-black hover:bg-[#8BC8DF] transition"
+          >
+            Select package
+          </button>
+        </div>
       </div>
+      <!-- ALL 3 CARDS END -->
 
-      <!-- LUXURY PACKAGE -->
+      <!-- FOOTER - PRICING SECTION DOTOR -->
 
-      <div class="w-[384px] h-[527px]
-             rounded-[40px]
-             bg-[#FAFBFC]
-             px-[24px] py-[30px]
-             flex flex-col">
+      <footer
+        class="w-[1200px] mt-auto mb-[40px] flex items-center justify-between"
+      >
+        <!-- SOCIAL BUTTONS -->
+        <div class="flex gap-[20px] text-[#6972B5] text-[20px] font-bold">
+          <!-- FACEBOOK -->
+          <a
+            href="https://www.facebook.com/"
+            class="flex items-center gap-[10px] rounded-[20px] bg-white px-[20px] py-[12px] cursor-pointer hover:bg-gray-100 transition"
+          >
+            <img
+              class="w-[24px] h-[24px]"
+              src="image/Facebook Icon.png"
+              alt="Facebook"
+            />
 
-        <!-- TITLE -->
-        <div class="flex items-center gap-[16px]">
+            Facebook
+          </a>
 
-          <div class="w-[36px] h-[36px]
-                 rounded-full
-                 border border-[#D9D9D9]
-                 flex items-center justify-center">
-            <span class="text-[18px]">♥</span>
-          </div>
+          <!-- INSTAGRAM -->
 
-          <h2 class="text-[20px] font-medium text-[#18181B]">
-            Luxury Package
-          </h2>
+          <a
+            href="https://instagram.com/"
+            class="flex items-center gap-[10px] rounded-[20px] bg-white px-[20px] py-[12px] cursor-pointer hover:bg-gray-100 transition"
+          >
+            <img
+              class="w-[24px] h-[24px]"
+              src="image/instagram icon.png"
+              alt="Instagram"
+            />
 
+            Instagram
+          </a>
         </div>
 
-        <!-- PRICE -->
+        <!-- FOOTER LOGO -->
 
-        <div class="mt-[38px]">
-
-          <h1 class="text-[40px] font-semibold text-[#303030]">
-            1200$
-          </h1>
-
-          <p class="text-[16px] text-[#999999] mt-[5px]">
-            Ultimate Comfort
-          </p>
-
-        </div>
-
-        <!-- INCLUDES -->
-
-        <div class="mt-[30px]">
-
-          <h3 class="text-[18px] font-medium ml-[40px] mb-[18px]">
-            Includes:
-          </h3>
-
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              Private transportation (SUV)
-            </p>
-          </div>
-
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047] leading-[18px]">
-              Luxury accommodation (lakefront lodge)
-            </p>
-          </div>
-
-          <div class="flex items-start gap-[22px] mb-[18px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              Guided tours (lake + reindeer herder experience)
-            </p>
-          </div>
-
-          <div class="flex items-start gap-[22px]">
-            <span class="text-[22px] leading-none">✓</span>
-            <p class="text-[14px] text-[#404047]">
-              All meals included (local cuisine)
-            </p>
-          </div>
-
-        </div>
-
-        <!-- BUTTON -->
-
-        <button class="mt-auto
-               w-full h-[48px]
-               rounded-full
-               bg-[#A4D5E7]
-               text-[16px]
-               font-semibold
-               text-black
-               hover:bg-[#8BC8DF]
-               transition">
-          Select package
-        </button>
-
-      </div>
-
-    </div>
-    <!-- ALL 3 CARDS END -->
-
-    <!-- FOOTER - PRICING SECTION DOTOR -->
-
-    <footer class="w-[1200px]
-           mt-auto
-           mb-[40px]
-           flex items-center justify-between">
-
-      <!-- SOCIAL BUTTONS -->
-      <div class="flex gap-[20px]
-             text-[#6972B5]
-             text-[20px]
-             font-bold">
-
-        <!-- FACEBOOK -->
-        <a href="https://www.facebook.com/" class="flex items-center
-               gap-[10px]
-               rounded-[20px]
-               bg-white
-               px-[20px] py-[12px]
-               cursor-pointer
-               hover:bg-gray-100
-               transition">
-
-          <img class="w-[24px] h-[24px]" src="image/Facebook Icon.png" alt="Facebook">
-
-          Facebook
-
-        </a>
-
-        <!-- INSTAGRAM -->
-
-        <a href="https://instagram.com/" class="flex items-center
-               gap-[10px]
-               rounded-[20px]
-               bg-white
-               px-[20px] py-[12px]
-               cursor-pointer
-               hover:bg-gray-100
-               transition">
-
-          <img class="w-[24px] h-[24px]" src="image/instagram icon.png" alt="Instagram">
-
-          Instagram
-
-        </a>
-
-      </div>
-
-      <!-- FOOTER LOGO -->
-
-      <img class="h-[56px] w-auto" src="image/pinetour logo.png" alt="PineTour Logo">
-
-    </footer>
-
-  </section>
-  <!-- PRICING SECTION END -->
-  <!-- LUCIDE -->
-  <script>
-    lucide.createIcons();
-  </script>
-
-</body>
-
+        <img
+          class="h-[56px] w-auto"
+          src="image/pinetour logo.png"
+          alt="PineTour Logo"
+        />
+      </footer>
+    </section>
+    <!-- PRICING SECTION END -->
+    <!-- LUCIDE -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
